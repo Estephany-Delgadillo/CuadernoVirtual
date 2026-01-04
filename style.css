@@ -1,0 +1,141 @@
+:root {
+    --lila: #b388eb;
+    --rosa: #ff9ec3;
+    --blanco: #fdf7ff;
+    --morado-suave: #e0d4f6;
+    --texto: #5a4a78;
+}
+
+body {
+    background-color: var(--blanco);
+    color: var(--texto);
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    padding-bottom: 2rem;
+}
+
+
+.navbar {
+    background: linear-gradient(135deg, var(--lila), var(--rosa)) !important;
+    box-shadow: 0 4px 12px rgba(179, 136, 235, 0.3);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: white !important;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+
+.btn-lila {
+    background: var(--lila);
+    border-color: var(--lila);
+    color: white !important;
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+}
+
+.btn-lila:hover {
+    background: #9a66e2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(179, 136, 235, 0.4);
+}
+
+.btn-rosa {
+    background: var(--rosa);
+    border-color: var(--rosa);
+    color: white !important;
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+}
+
+.btn-rosa:hover {
+    background: #ff7aad;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 158, 195, 0.4);
+}
+
+/* Tarjetas */
+.card {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 6px 15px rgba(90, 74, 120, 0.1);
+    transition: transform 0.3s ease;
+    background: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background: linear-gradient(135deg, var(--morado-suave), white);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: none;
+    padding: 1.2rem;
+}
+
+
+.form-control {
+    border: 2px solid var(--morado-suave);
+    border-radius: 12px;
+    padding: 0.6rem;
+}
+
+.form-control:focus {
+    border-color: var(--lila);
+    box-shadow: 0 0 0 0.2rem rgba(179, 136, 235, 0.25);
+}
+
+
+.boton-opcion {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.boton-estudiar {
+    background: linear-gradient(135deg, var(--lila), #9a66e2);
+    box-shadow: 0 6px 15px rgba(179, 136, 235, 0.4);
+}
+
+.boton-estudiar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(179, 136, 235, 0.6);
+}
+
+.boton-agregar {
+    background: linear-gradient(135deg, var(--rosa), #ff7aad);
+    box-shadow: 0 6px 15px rgba(255, 158, 195, 0.4);
+}
+
+.boton-agregar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 158, 195, 0.6);
+}
+
+/* Iconos decorativos */
+.icono {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    .boton-opcion {
+        max-width: 90%;
+        padding: 1.2rem;
+    }
+}
